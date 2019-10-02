@@ -1,0 +1,68 @@
+#include "std_lib_facilities.h"		// our course header
+
+int main()
+{
+//Változók
+string name;
+string first_name;
+char friend_sex='0';
+int age;
+int age_switch;
+
+
+	//1.
+	cout << "Enter the name of the person you want to write to (followed " << "by 'enter'):\n";
+	cin >> first_name;
+	cout << "Dear, " << first_name << '\n';
+	
+	//2.
+	cout << "How are you ? I am fine.\nI miss you \n";
+	
+	//3.
+	cout << "Enter another name!\n";
+	cin >> name;
+
+	//4.
+	cout << "I's " <<name<<" a male(m) or female(f)?\n\n";
+	cin>>friend_sex;
+		
+		if (friend_sex=='m')
+		{
+			cout<<"If you see "<<name<<" please ask him to call me\n";
+		}
+		if (friend_sex=='f')
+		{
+			cout<<"If you see "<<name<<" please ask she to call me\n";
+		}
+	//5.
+	cout<<"Enter the age\n";
+	cin>>age;
+	cout<<"I hear you just had a birthday and your age years old\n\n";
+		
+	//6.		
+		if (age <0 || age>110)
+		{
+			simple_error("you are kidding !\n");
+		}
+		
+		if (age==17)
+		{
+		 cout<<"next year you will be abble to vote\n";
+		}
+		
+		if (age<12)
+		{
+		 cout<<"next year you will be "<<age+1<<"\n";
+		}
+
+		if (age>70)	
+		{
+		 cout<<"i hope you are enjoying retirement\n";
+		}
+	//7.
+	cout<<"Yours sincerely\n";
+
+
+
+
+}		
